@@ -1,6 +1,6 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+FROM ubuntu AS base
 WORKDIR /app
 EXPOSE 80
 
@@ -17,4 +17,3 @@ RUN dotnet publish "AWS_Demo_App.csproj" --force -c Release -o /app/publish -p:P
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "AWS_Demo_App.dll"]
