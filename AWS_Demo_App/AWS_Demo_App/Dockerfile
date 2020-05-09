@@ -17,3 +17,4 @@ RUN dotnet publish "AWS_Demo_App.csproj" --force -c Release -o /app/publish -p:P
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+ENTRYPOINT ["./AWS_Demo_App"]
