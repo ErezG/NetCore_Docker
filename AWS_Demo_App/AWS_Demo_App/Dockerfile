@@ -5,7 +5,7 @@ WORKDIR /app
 EXPOSE 80
 RUN apk add --no-cache libstdc++ libintl
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
 WORKDIR /src
 COPY . "AWS_Demo_App/"
 WORKDIR "/src/AWS_Demo_App"
