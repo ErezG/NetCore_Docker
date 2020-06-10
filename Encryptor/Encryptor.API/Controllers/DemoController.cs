@@ -16,10 +16,10 @@ namespace Encryptor.API.Controllers
         [HttpGet]
         public DemoResponse Get() => new DemoResponse();
 
-        [HttpGet(nameof(Echo))]
-        public DemoResponse Echo(string input) => new MessageResponse(Responder.Echo(input));
+        [HttpGet(nameof(Encrypt))]
+        public DemoResponse Encrypt(string input) => new MessageResponse(SpyMaster.Encrypt(input));
 
-        [HttpGet(nameof(Reverse))]
-        public DemoResponse Reverse(string input) => new MessageResponse(Responder.Reverse(input));
+        [HttpGet(nameof(Decrypt))]
+        public DemoResponse Decrypt(string input) => new MessageResponse(SpyMaster.Decrypt(input));
     }
 }
