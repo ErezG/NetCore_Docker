@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encryptor", "Encryptor", "{152F927B-8BA1-46EF-B85C-0B2AC98DB119}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryptor.BL", "..\Encryptor\Encryptor.BL\Encryptor.BL.csproj", "{4E613235-2686-4242-B091-96DA019FBF54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryptor.API", "..\Encryptor\Encryptor.API\Encryptor.API.csproj", "{38870E33-4E25-4867-A304-9E5DC99E557C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo App", "Demo App", "{E448EDB6-290F-461D-B668-2D84956D463A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApp.BL", "..\AWS_Demo_App\DemoApp.BL\DemoApp.BL.csproj", "{F24CE0EB-B64B-45F4-83C1-F6D6CDD69AAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWS_Demo_App", "..\AWS_Demo_App\AWS_Demo_App\AWS_Demo_App.csproj", "{32D30E61-408E-4A9E-9ADD-5E6AFEBDCBBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E613235-2686-4242-B091-96DA019FBF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E613235-2686-4242-B091-96DA019FBF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E613235-2686-4242-B091-96DA019FBF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E613235-2686-4242-B091-96DA019FBF54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38870E33-4E25-4867-A304-9E5DC99E557C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38870E33-4E25-4867-A304-9E5DC99E557C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38870E33-4E25-4867-A304-9E5DC99E557C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38870E33-4E25-4867-A304-9E5DC99E557C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F24CE0EB-B64B-45F4-83C1-F6D6CDD69AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24CE0EB-B64B-45F4-83C1-F6D6CDD69AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24CE0EB-B64B-45F4-83C1-F6D6CDD69AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24CE0EB-B64B-45F4-83C1-F6D6CDD69AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D30E61-408E-4A9E-9ADD-5E6AFEBDCBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D30E61-408E-4A9E-9ADD-5E6AFEBDCBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D30E61-408E-4A9E-9ADD-5E6AFEBDCBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D30E61-408E-4A9E-9ADD-5E6AFEBDCBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E613235-2686-4242-B091-96DA019FBF54} = {152F927B-8BA1-46EF-B85C-0B2AC98DB119}
+		{38870E33-4E25-4867-A304-9E5DC99E557C} = {152F927B-8BA1-46EF-B85C-0B2AC98DB119}
+		{F24CE0EB-B64B-45F4-83C1-F6D6CDD69AAD} = {E448EDB6-290F-461D-B668-2D84956D463A}
+		{32D30E61-408E-4A9E-9ADD-5E6AFEBDCBBB} = {E448EDB6-290F-461D-B668-2D84956D463A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F79D451F-875F-4F6B-A429-FC1C41827241}
+	EndGlobalSection
+EndGlobal
