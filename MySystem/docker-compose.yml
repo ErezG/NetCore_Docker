@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  webapplication1:
+    image: ${DOCKER_REGISTRY-}webapplication1
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile
+  DemoApp:
+    image: ${DOCKER_REGISTRY-}demoapp
+    build:
+      context: ../AWS_Demo_App
+      dockerfile: AWS_Demo_App/Dockerfile
+    environment:
+      MAIN_KEY: "docker compose"
+    ports:
+    - target: 80
+      published: 8091
+      protocol: tcp
+      mode: host
+  Encryptor:
+    image: ${DOCKER_REGISTRY-}encryptor
+    build:
+      context: ../Encryptor
+      dockerfile: Encryptor.API/Dockerfile
+    environment:
+      MAIN_KEY: "docker compose"
+    ports:
+    - target: 80
+      published: 8092
+      protocol: tcp
+      mode: host
