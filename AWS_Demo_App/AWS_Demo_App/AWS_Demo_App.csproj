@@ -17,4 +17,8 @@
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DemoApp.BL\DemoApp.BL.csproj" />
+  </ItemGroup>
+
 </Project>
