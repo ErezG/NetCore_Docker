@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using AWS_Demo_App.Configuration;
+using DemoApp.BL.Configurations;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -16,6 +16,7 @@ namespace AWS_Demo_App
         public static void Main(string[] args)
         {
             CTConfig.Env.Key = Environment.GetEnvironmentVariable("MAIN_KEY");
+            CTConfig.Services.EncryptorDomain = Environment.GetEnvironmentVariable("encryptor_domain");
 
             CreateHostBuilder(args).Build().Run();
         }

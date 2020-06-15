@@ -1,9 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AWS_Demo_App.Configuration.Sections
+namespace DemoApp.BL.Configurations.Sections
 {
     public class EnvConfig
     {

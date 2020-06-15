@@ -1,4 +1,4 @@
-using AWS_Demo_App.Configuration;
+using DemoApp.BL.Configurations;
 using System;
 
 namespace AWS_Demo_App.ResponseModels
