@@ -17,9 +17,17 @@ namespace AWS_Demo_App.Controllers
         public DemoResponse Get() => new DemoResponse();
 
         [HttpGet(nameof(Echo))]
-        public DemoResponse Echo(string input) => new MessageResponse(Responder.Echo(input));
+        public async Task<DemoResponse> Echo(string input, bool encrypt = false)
+        {
+            var output = await Responder.Echo(input, encrypt);
+            return new MessageResponse(output);
+        }
 
         [HttpGet(nameof(Reverse))]
-        public DemoResponse Reverse(string input) => new MessageResponse(Responder.Reverse(input));
+        public async Task<DemoResponse> Reverse(string input, bool encrypt)
+        {
+            var output = await Responder.Reverse(input, encrypt);
+            return new MessageResponse(output);
+        }
     }
 }
